@@ -81,8 +81,8 @@ public class EmployeeTest {
         int employeeIdInCompany = Helpers.addEmployee(employee);
 //        EmployeeList employees = Helpers.getListEmployeesForCompany(String.valueOf(companyId));
 //        assert(employees.size() > 0);
-        ArrayList<Integer> ids = Helpers.getListEmployeesForCompany(String.valueOf(companyId));
-        assert (ids.size() > 0);
+        ArrayList<Integer> employees = Helpers.getListEmployeesForCompany(String.valueOf(companyId));
+        assert (employees.size() > 0);
     }
 }
 
