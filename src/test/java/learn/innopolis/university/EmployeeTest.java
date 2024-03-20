@@ -34,6 +34,7 @@ public class EmployeeTest {
         AuthRequest authRequest = new AuthRequest()
                 .setUsername("bloom")
                 .setPassword("fire-fairy");
+
         TOKEN = given()
                 .contentType(ContentType.JSON)
                 .body(authRequest)
@@ -81,7 +82,7 @@ public class EmployeeTest {
 //        EmployeeList employees = Helpers.getListEmployeesForCompany(String.valueOf(companyId));
 //        assert(employees.size() > 0);
         ArrayList<Integer> ids = Helpers.getListEmployeesForCompany(String.valueOf(companyId));
-        assert(ids.size() > 0);
+        assert (ids.size() > 0);
     }
 }
 

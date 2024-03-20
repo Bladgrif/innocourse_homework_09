@@ -15,4 +15,4 @@ public enum Endpoint {
         return path;
     }
 
-    }
+}
